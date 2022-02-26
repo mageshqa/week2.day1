@@ -124,9 +124,11 @@ public class Assignment2 {
 		System.out.println("Form Created");
 
 		// get text of resulting page
-		WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
-		System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
-
+		//WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
+		//System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
+		
+		System.out.println("Page Title is "+driver.getTitle());
+		
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 
 		// click edit
@@ -147,9 +149,9 @@ public class Assignment2 {
 		clickUpdate.click();
 
 		// get text of resulting page
-		WebElement editPageTitle = createPageTitle;
+		//WebElement editPageTitle = createPageTitle;
 		// driver.findElement(By.id("sectionHeaderTitle_leads"));
-		System.out.println("Page Title of resulting page after creating Lead is " + editPageTitle.getText());
+		System.out.println("Page Title of resulting page after creating Lead is " + driver.getTitle());
 
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 

@@ -124,9 +124,9 @@ public class Assignment1 {
 		System.out.println("Form Created");
 
 		// get text of resulting page
-		WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
-		System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
-
+		//WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
+		//System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
+		System.out.println("Page Title is "+driver.getTitle());
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 
 		// close browser

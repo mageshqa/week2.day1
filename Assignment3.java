@@ -123,9 +123,9 @@ public class Assignment3 {
 		System.out.println("Form Created");
 
 		// get text of resulting page
-		WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
-		System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
-
+		//WebElement createPageTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
+		//System.out.println("Page Title of resulting page after creating Lead is " + createPageTitle.getText());
+		System.out.println("Page Title is "+driver.getTitle());
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 
 		// click Duplicate Lead WebElement dupLeadButton =
@@ -151,9 +151,8 @@ public class Assignment3 {
 		System.out.println("Create Lead button clicked after Duplicate operation");
 
 		// get text of resulting page WebElement editPageTitle = createPageTitle; //
-
-		WebElement newTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
-		System.out.println("Page Title of resulting page after creating Lead is " + newTitle.getText());
+		//WebElement newTitle = driver.findElement(By.id("sectionHeaderTitle_leads"));
+		System.out.println("Page Title of resulting page after creating Lead is " + driver.getTitle());
 
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 
